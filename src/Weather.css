@@ -1,0 +1,10 @@
+.Weather{
+  border: 2px solid #D91D58;
+  padding: 10px;
+ }
+h1{
+    text-align:left;
+}
+li{
+   list-style: none;
+}

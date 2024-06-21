@@ -21,10 +21,11 @@
   padding:0;
 
  }
- .Weather img{
+ .Weather canvas{
   float:left;
   margin-right: 10px;
-  width:64px;
+  margin-top: 5px;
+  
  }
 .Weather li{
     font-size: 18px;

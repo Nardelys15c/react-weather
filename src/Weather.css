@@ -1,45 +1,46 @@
 
 .Weather{
-  border: 2px solid #d8698c;
+  border-radius: 4px;
+  border: 1px solid #d8698c;
   padding: 35px;
   margin:30px auto;
   font-family: Arial, Helvetica, sans-serif;
 }
-.Weather form{
-  margin-bottom: 20px;
-}
+
  .Weather h1{
-  display:block;
   color:#e19cb2;
   margin:20px 0 0 0;
   font-size: 48px;
-  font-weight: 300;
+  font-weight: 200;
   line-height: 79px;
  }
  .Weather ul{
   padding:0;
+  margin: 0;
+ }
 
- }
- .Weather canvas{
- 
-   margin-right: 10px;
-  margin-top: 5px;
-  
- }
-.Weather li{
-    font-size: 18px;
-  font-weight: 100;
-  line-height: 20px;
-   list-style: none;
+ .Weather li{
+  font-size: 18px;
+font-weight: 100;
+line-height: 20px;
+ list-style: none;
 }
 
 .Weather .temperature {
+  font-weight: 400;
+  color:#9c566c;
+  font-size: 54px;
+  line-height: 54px;
+  margin-left: 10px;
+ 
+    }
 
-font-weight:400;
-color:#9c566c;
-font-size: 55px;
-line-height: 64px;
-}
+ .Float-left canvas{
+       margin: 10px auto;
+      float: left;
+ 
+ }
+
 .Weather .unit {
   font-size: 16px;
   color:#161112;

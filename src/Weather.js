@@ -29,7 +29,7 @@ const apiKey="012db25be4dd3739185b772ee4fc78d3";
 let apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
 axios.get(apiUrl).then(handleResponse);
 
-  }
+  }  
 
   function handleSubmit(event){
     event.preventDefault();

@@ -19,7 +19,14 @@ function handleResponse(response){
       setLoaded(true);
 }
 
-
+function load(){
+    let apiKey= "701f06352d61835bc4fc894e7b084629";
+    let longitude= props.coordinates.lon;
+    let latitude= props.coordinates.lat;
+    let apiUrl= `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
+    
+    Axios.get(apiUrl).then(handleResponse);
+}
     
 if (loaded){
     return(
@@ -41,12 +48,8 @@ if (loaded){
         </div>
     );
     } else {
-    let apiKey= "701f06352d61835bc4fc894e7b084629";
-    let longitude= props.coordinates.lon;
-    let latitude= props.coordinates.lat;
-    let apiUrl= `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
+    load();
     
-    Axios.get(apiUrl).then(handleResponse);
     return null;
     
 }
